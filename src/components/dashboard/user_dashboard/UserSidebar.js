@@ -1,7 +1,5 @@
 import Won from '../../../assets/img/won.svg'
 import { Link, useRouteMatch } from 'react-router-dom'
-import { logout } from '../../../js/actions'
-import store from '../../../js/store'
 
 const UserSidebar = ({ setShowSide }) => {
 
@@ -18,7 +16,8 @@ const UserSidebar = ({ setShowSide }) => {
     recursos: { path: '/dashboard/recursos', text: 'Recursos', active: false },
     legal: { path: '/dashboard/legal', text: 'Legal', active: false },
     cuentanos: { path: '/dashboard/cuentanos', text: 'Cuéntanos', active: false },
-    historial: { path: '/dashboard/historial', text: 'Historial', active: false }
+    historial: { path: '/dashboard/historial', text: 'Historial', active: false },
+    cerrar: { path: '/dashboard/cerrar', text: 'Cerrar sesión', active: false }
   }
 
   links[section].active = true
@@ -35,9 +34,6 @@ const UserSidebar = ({ setShowSide }) => {
             { links[s].text }
           </Link>
       ))}
-      <Link className={`icon logout`} to='#!' onClick={ () => store.dispatch(logout()) }>
-        Cerrar sesión
-      </Link>
     </>
   )
 }

@@ -1,0 +1,38 @@
+.v-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout {
+  text-align: center;
+
+  img {
+    width: 250px;
+  }
+  
+  .title {
+    color: $grey-text;
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    color: $orange-button;
+  }
+}
+
+.logout-mobile {
+  width: 250px;
+  text-align: center;
+
+  img {
+    width: 100px;
+  }
+  
+  .title {
+    color: $grey-text;
+    font-size: 1rem;
+  }
+
+}

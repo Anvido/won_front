@@ -1,5 +1,6 @@
 import { Switch, Route, Redirect } from "react-router-dom"
 import Catalogue from "../catalogue/Catalogue"
+import Logout from "../Logout"
 
 const UserContent = () => {
   return (
@@ -40,6 +41,9 @@ const UserContent = () => {
         </Route>
         <Route exact path='/dashboard/historial'>
           <div>historial</div>
+        </Route>
+        <Route exact path='/dashboard/cerrar'>
+          <Logout />
         </Route>
         <Redirect to='/404'/>  
       </Switch>  
