@@ -1,7 +1,8 @@
-import { Switch, Route, Redirect } from "react-router-dom"
-import RedirectRoute from './RedirectRoute'
+// components
 import SingIn from './sign/SignIn' 
+import RedirectRoute from './RedirectRoute'
 import Dashboard from './dashboard/Dashboard'
+import { Switch, Route, Redirect } from "react-router-dom"
 
 const App = () => {
   return (

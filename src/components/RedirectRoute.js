@@ -1,6 +1,6 @@
+import store from '../js/store'
 import React, { useEffect, useState } from 'react'
 import { Route, Redirect } from 'react-router-dom'
-import store from '../js/store'
 
 const RedirectRoute = ({ children, path, redirect, protect, exact }) => {
 

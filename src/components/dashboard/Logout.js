@@ -1,9 +1,9 @@
+import { useEffect } from 'react'
 import store from '../../js/store'
 import { logout } from '../../js/actions'
+// assets
 import logout_img from '../../assets/img/logout.png'
 import logout_mobile from '../../assets/img/logout_mobile.svg'
-import { useEffect } from 'react'
-
 
 const Logout = () => {
 
@@ -11,7 +11,7 @@ const Logout = () => {
     if (window.innerWidth > 767) {
       setTimeout(() => {
         store.dispatch(logout())
-      }, 3000)
+      }, 2000)
     }
   }, [])
   

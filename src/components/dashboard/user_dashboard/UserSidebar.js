@@ -1,5 +1,6 @@
-import Won from '../../../assets/img/won.svg'
 import { Link, useRouteMatch } from 'react-router-dom'
+// assets
+import Won from '../../../assets/img/won.svg'
 
 const UserSidebar = ({ setShowSide }) => {
 

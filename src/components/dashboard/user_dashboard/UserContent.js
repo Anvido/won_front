@@ -1,5 +1,6 @@
-import { Switch, Route, Redirect } from "react-router-dom"
 import Catalogue from "../catalogue/Catalogue"
+import { Switch, Route, Redirect } from "react-router-dom"
+// assets
 import Logout from "../Logout"
 
 const UserContent = () => {
