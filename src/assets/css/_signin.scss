@@ -1,0 +1,129 @@
+.signin {
+  height: 100%;
+  background-image: url('../img/Foto\ fondo.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.won {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  height: 120px;
+}
+
+.signin-form {
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  width: 300px;
+  height: fit-content;
+  padding: 32px 48px;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: $grey-title;
+  margin: 8px 0;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $blue-link;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid;
+  border-color: $grey-lines;
+  border-width: 1px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+.signin-input {
+  display: block;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.signin-button {
+  background-image: linear-gradient(to right, $orange-button 0%, $red-button  100%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;            
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+hr {
+  margin: 24px 0;
+}
+
+.signup-button {
+  width: 100%;
+  display: block;
+  background-color: $white;
+  color: $grey-text;
+  font-weight: 600;
+  border: 1px solid $grey-button;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+
+.alert {
+  font-size: 0.8rem;
+  display: block;
+  text-align: center;
+  color: $red-button;
+}
+
+@media (min-width: 768px) { 
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .signin {
+    background-image: none;
+  }
+
+  .signin-form {
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin: auto;
+    padding: 0;
+  }
+
+  .red_won {
+    margin: auto;
+    padding: 32px 0;
+    display: block;
+  }
+}

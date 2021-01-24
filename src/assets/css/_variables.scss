@@ -1,0 +1,29 @@
+$white: #FFFFFF;
+$grey-labels: #C5C5C5;
+$grey-lines: #BBBBBB;
+$grey-title: #707070;
+$orange-button: #FE4518;
+$red-button: #DF2330;
+$grey-button: #CDCDCD;
+$grey-text: #828282;
+$blue-link: #1592E6;
+$active-link: #C1000D;
+$dashboard-bg: #F5F5F5;
+$sidebar-width: 220px;
+$z-mobilenav: 100;
+$z-overlay: 99;
+$card-width: 180px;
+$card-height: 150px;
+$mb-card-width: 150px;
+$mb-card-height: 120px;
+
+* {
+  font-family: 'Segoe UI';
+  font-size: 1rem;
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.content {
+  margin-left: $sidebar-width;
+  background-color: $dashboard-bg;
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 767px) {
+  .content {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
